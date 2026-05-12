@@ -23,8 +23,8 @@ struct TweaksView: View {
                 Section(header: HeaderLabel(text: "User Interface", icon: "eye")) {
                     NavigationLink("dirtyZero", destination: ZeroView(mgr: mgr))
                         .disabled(!mgr.vfsready)
-                    NavigationLink("MobileGestalt", destination: EditorView())
-                        .disabled(!mgr.sbxready)
+                    //NavigationLink("MobileGestalt", destination: GestaltView())
+                        //.disabled(!mgr.sbxready)
                     NavigationLink("Card Overwrite", destination: CardView())
                     NavigationLink("Font Overwrite", destination: FontPicker(mgr: mgr))
                         .disabled(!mgr.vfsready)
