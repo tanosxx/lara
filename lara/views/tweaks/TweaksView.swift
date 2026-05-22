@@ -46,7 +46,7 @@ struct TweaksView: View {
                 Section(header: HeaderLabel(text: "User Interface", icon: "eye")) {
                     NavigationLink("dirtyZero", destination: dirtyZeroView())
                         .disabled(!mgr.vfsready)
-                    NavigationLink("MobileGestalt", destination: GestaltView(mgr: laramgr()))
+                    NavigationLink("MobileGestalt", destination: GestaltView(mgr: mgr))
                         .disabled(!mgr.sbxready)
                     NavigationLink("Font Overwrite", destination: FontPicker(mgr: mgr))
                         .disabled(!mgr.vfsready)
